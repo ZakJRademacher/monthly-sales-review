@@ -14,7 +14,7 @@
     "accent": "accent"
   },
   "frame_label": "Monthly sales review",
-  "preview_note": "December 1–30, 2018 vs 2017 · source currency unspecified",
+  "preview_note": "December 1–30, 2018 vs 2017 · source currency unspecified · v1.0.0",
   "footer": "PYTHON / SQL / BUSINESS REPORTING",
   "preview_mode": "contain"
 }
