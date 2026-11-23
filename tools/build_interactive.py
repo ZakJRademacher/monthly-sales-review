@@ -33,6 +33,8 @@ def build():
     page=template.replace('/* REPORT_CSS */',styles).replace('/* REPORT_JS */',(ROOT/'web/report.js').read_text(encoding='utf-8'))
     page=page.replace('REPORT_DATA_JSON',json.dumps(payload,separators=(',',':')).replace('<','\\u003c'))
     output=ROOT/'deliverables/Monthly Sales Interactive.html';output.write_text(page,encoding='utf-8')
+    # The same page at a clean address for GitHub Pages: /monthly-sales-review/report/
+    web_copy=ROOT/'report/index.html';web_copy.parent.mkdir(exist_ok=True);web_copy.write_text(page,encoding='utf-8')
     return {'output':str(output),'source_csv_sha256':payload['source_csv_sha256'],'source_records':len(rows),'current_sales_units':summary['current']['sales_units'],'orders':summary['current']['orders'],'trend_points':len(trend),'all_driver_values_and_totals_reconciled':True}
 
 
