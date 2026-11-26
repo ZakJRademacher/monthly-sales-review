@@ -1,12 +1,12 @@
 # Monthly Sales Review
 
+![Tableau sales review comparing December 1–30 in 2018 and 2017](deliverables/tableau-sales-preview.png)
+
 Sales fell even though more orders came in. I compared the same December dates in both years, then looked at the categories, regions, and products behind the change.
 
 The main report is a **Tableau brief**, backed by Python and SQLite analysis of **9,800 sales lines across 48 monthly exports**. It gives a reader the finding, the comparison, and a sensible place to investigate next.
 
 **[Open the live report](https://zakjrademacher.github.io/monthly-sales-review/report/)** · [Preview image](deliverables/tableau-sales-preview.png) · [Download the workbook](deliverables/Monthly%20Sales%20Review.twbx) · [Read the analysis](docs/METHOD.md)
-
-![Tableau sales review comparing December 1–30 in 2018 and 2017](deliverables/tableau-sales-preview.png)
 
 ## What I found
 
